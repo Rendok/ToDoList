@@ -98,7 +98,18 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     var dailyTasks = [Task(task: "Feed the cat", type: .daily, isCompleted: true),
-                      Task(task: "Walk the dog", type: .daily)]
+                      Task(task: "Walk the dog", type: .daily),
+                      Task(task: "Walk the dog1", type: .daily),
+                      Task(task: "Walk the dog2", type: .daily),
+                      Task(task: "Walk the dog3", type: .daily),
+                      Task(task: "Walk the dog4", type: .daily),
+                      Task(task: "Walk the dog5", type: .daily),
+                      Task(task: "Walk the dog6", type: .daily),
+                      Task(task: "Walk the dog7", type: .daily),
+                      Task(task: "Walk the dog8", type: .daily),
+                      Task(task: "Walk the dog9", type: .daily),
+                      Task(task: "Walk the dog10", type: .daily),
+                      Task(task: "Walk the dog11", type: .daily)]
     var weeklyTasks = [Task(task: "Clean the room", type: .weekly),
                        Task(task: "Do the laundry", type: .weekly)]
     var monthlyTasks = [Task(task: "Do nothing", type: .monthly)]
