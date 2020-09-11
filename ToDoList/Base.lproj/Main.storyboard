@@ -21,7 +21,7 @@
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="8bb-N2-Apz">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="414"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="defaultCell" id="Lri-YL-3fu">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DefaultCell" id="Lri-YL-3fu">
                                                 <rect key="frame" x="20" y="55.5" width="374" height="43.5"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Lri-YL-3fu" id="NkP-Gj-F8J">
@@ -39,7 +39,11 @@
                                         <rect key="frame" x="0.0" y="803" width="414" height="49"/>
                                         <items>
                                             <barButtonItem style="plain" systemItem="flexibleSpace" id="AbW-YF-6p7"/>
-                                            <barButtonItem systemItem="add" id="7sd-Ph-P3P"/>
+                                            <barButtonItem systemItem="add" id="7sd-Ph-P3P">
+                                                <connections>
+                                                    <segue destination="hmW-dQ-2Cn" kind="show" id="I1b-8e-sfy"/>
+                                                </connections>
+                                            </barButtonItem>
                                         </items>
                                     </toolbar>
                                 </subviews>
@@ -58,6 +62,31 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-3086" y="214"/>
+        </scene>
+        <!--New Task-->
+        <scene sceneID="Uxe-RZ-T7i">
+            <objects>
+                <viewController id="hmW-dQ-2Cn" customClass="NewTaskViewController" customModule="ToDoList" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kqV-aO-QC9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Test Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eby-xN-AZu">
+                                <rect key="frame" x="131" y="370" width="152" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="f6N-RY-HWv"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="New Task" id="qx4-h8-rRm"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Aeo-kp-0CT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2245" y="214"/>
         </scene>
     </scenes>
 </document>
